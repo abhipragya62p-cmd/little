@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090d">
+  <meta name="description" content="A little secret, wrapped in a midnight sky.">
+  <title>The 58th Reason — A Little Secret</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Parisienne&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true" id="ambient"></div>
+  <div class="progress-track"><span id="progress"></span></div>
+  <header class="topbar">
+    <a class="wordmark" href="#" aria-label="The 58th Reason home"><span class="wordmark-mark">✳</span> A LITTLE
+      SECRET</a>
+    <div class="topbar-right"><span class="live-dot"></span><span>MADE OF UNSAID WORDS</span></div>
+  </header>
+
+  <main>
+    <!-- INTRO -->
+    <section class="scene intro active" id="intro" aria-labelledby="intro-title">
+      <div class="intro-orbit orbit-one"></div>
+      <div class="intro-orbit orbit-two"></div>
+      <div class="intro-content">
+        <p class="eyebrow reveal-up">A NOTE FOR SOMEONE SPECIAL <span>·</span> 01 / 04</p>
+        <div class="intro-symbol reveal-up delay-1"><span>✳</span><i></i></div>
+        <p class="micro reveal-up delay-1">SOME THINGS ARE EASIER TO WRITE</p>
+        <h1 id="intro-title" class="display reveal-up delay-2">Some words<br>wait for <em>nightfall.</em></h1>
+        <p class="intro-copy reveal-up delay-3">A tiny corner of the internet. A little courage.<br>And a message meant
+          for one person.</p>
+        <button class="text-cta reveal-up delay-4" id="beginBtn"><span>ENTER THE LETTER</span><b>↗</b></button>
+      </div>
+      <div class="side-note">31 OCTOBER <span>—</span> JUST BECAUSE</div>
+      <div class="bottom-note">SCROLL LESS. FEEL MORE.</div>
+    </section>
+
+    <!-- ENVELOPE -->
+    <section class="scene envelope-scene" id="envelope" aria-labelledby="envelope-title">
+      <div class="section-heading">
+        <p class="eyebrow">A SMALL DELIVERY <span>·</span> 02 / 04</p>
+        <h2 id="envelope-title" class="display">For your eyes <em>only.</em></h2>
+        <p class="muted">There is a letter here with your name written nowhere—<br>because some feelings don't need an
+          address.</p>
+      </div>
+      <button class="envelope-button" id="envelopeBtn" aria-label="Open the sealed letter">
+        <span class="envelope-glow"></span>
+        <span class="envelope">
+          <span class="envelope-back"></span>
+          <span class="letter-peek"><span class="letter-lines"></span><span class="letter-stamp">✳</span></span>
+          <span class="envelope-front"></span>
+          <span class="envelope-flap"></span>
+          <span class="wax-seal">✳</span>
+        </span>
+      </button>
+      <p class="envelope-instruction" id="envelopeInstruction"><span class="pulse-dot"></span> TAP THE SEAL TO OPEN</p>
+      <button class="quiet-link" id="skipEnvelope">or continue without opening</button>
+    </section>
+
+    <!-- LETTER -->
+    <section class="scene letter-scene" id="letter" aria-labelledby="letter-title">
+      <div class="letter-layout">
+        <div class="letter-aside">
+          <p class="eyebrow">THE UNSENT LETTER <span>·</span> 03 / 04</p>
+          <div class="vertical-label">A LITTLE HONESTY, AT LAST</div>
+          <span class="aside-star">✳</span>
+        </div>
+        <article class="letter-paper">
+          <div class="paper-top"><span>PRIVATE THOUGHTS</span><span>№ 018</span></div>
+          <p class="salutation">Dear pretty girl,</p>
+          <div class="letter-body" id="typedMessage">
+            <p>I've tried so many times to say that I like you. Somehow, every time I get close, I lose my courage and
+              let the moment pass.</p>
+            <p>Maybe I overthink. Maybe I wonder whether I'm interesting enough, or whether you'd ever look at me the
+              same way. So I keep the words to myself.</p>
+            <p>I don't know if I'll ever say this face to face. But I wanted you to know that someone from our branch
+              notices your smile, admires you, and thinks you're pretty.</p>
+            <p class="letter-emphasis">I like you. A lot. <span>♡</span></p>
+            <p>No pressure, no expectations, and no need to feel the same. I just wanted to be honest in the smallest
+              way I could.</p>
+          </div>
+          <div class="paper-bottom"><span>WITH A LITTLE COURAGE</span><span class="handwritten">someone, somewhere
+              ♡</span></div>
+        </article>
+      </div>
+      <button class="next-link" id="toPuzzle"><span>THERE'S ONE MORE THING</span><b>↓</b></button>
+    </section>
+
+    <!-- PUZZLE -->
+    <section class="scene puzzle-scene" id="puzzle" aria-labelledby="puzzle-title">
+      <div class="puzzle-wrap">
+        <div class="puzzle-topline">
+          <p class="eyebrow">A DETOUR THROUGH MATHEMATICS <span>·</span> 04 / 04</p><span class="difficulty">ENGINEERING
+            MATHEMATICS <i>✳</i> CHALLENGE</span>
+        </div>
+        <h2 id="puzzle-title" class="display">A little mystery.<br><em>A precise answer.</em></h2>
+        <p class="muted puzzle-intro">Before the final page, one small challenge. Evaluate the definite integral
+          analytically—no numerical approximation.</p>
+        <div class="formula-card">
+          <div class="formula-label"><span>PROBLEM 01</span><span>10 POINTS · INFINITE PATIENCE</span></div>
+          <div class="math-expression">
+            <div class="integral-line"><span class="math-i">I =</span><span class="integral-sign">∫</span><span
+                class="limits"><sup>1</sup><sub>0</sub></span><span class="math-content">[58 +
+                e<sup>sin(x²)+cos(x³)</sup> · {</span></div>
+            <div class="math-continuation">
+              8x⁷(1−x)⁷(1−2x) ln(1+x²+x⁴)<br>
+              + x⁸(1−x)⁸(2x cos(x²)−3x² sin(x³)) ln(1+x²+x⁴)<br>
+              + <span class="fraction"><span>x⁸(1−x)⁸(2x+4x³)</span><span>1+x²+x⁴</span></span>
+              <span class="closing-brace">}] dx</span>
+            </div>
+          </div>
+          <div class="formula-footer"><span>SHOW YOUR WORK, OR TRUST YOUR INSTINCT.</span><span>∴</span></div>
+        </div>
+        <div class="answer-row">
+          <label for="answerInput">YOUR ANSWER</label>
+          <div class="answer-controls"><input id="answerInput" type="number" inputmode="decimal"
+              placeholder="Enter value…" autocomplete="off"><button id="submitAnswer">CHECK ANSWER
+              <span>↗</span></button></div>
+          <p class="feedback" id="feedback" aria-live="polite">A hint is available if the mystery gets stubborn.</p>
+          <button class="hint-btn" id="hintBtn">NEED A HINT? <span>＋</span></button>
+          <p class="hint-text" id="hintText" hidden>Look for the derivative of a product: x⁸(1−x)⁸ · ln(1+x²+x⁴) ·
+            e<sup>sin(x²)+cos(x³)</sup>. What happens to it at both endpoints?</p>
+        </div>
+        <div class="puzzle-foot"><span>THE ANSWER IS A NUMBER. THE REASON IS A FEELING.</span><span>58 <i>✳</i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVEAL -->
+    <section class="scene reveal-scene" id="reveal" aria-labelledby="reveal-title">
+      <div class="reveal-halo"></div>
+      <div class="reveal-content">
+        <p class="eyebrow">THE LITTLE SECRET, REVEALED</p>
+        <div class="reveal-flower">✳</div>
+        <p class="reveal-kicker">IF YOU MADE IT THIS FAR…</p>
+        <h2 id="reveal-title" class="display">It was never<br>about <em>the answer.</em></h2>
+        <div class="reveal-divider"><span></span>♡<span></span></div>
+        <p class="reveal-message">It was about finding a way to tell you<br>what I couldn't say out loud.</p>
+        <p class="reveal-signature">With warmth,</p>
+        <p class="reveal-small">No pressure to reply. Just a little honesty, sent your way.</p>
+        <div class="response-box" id="decisionBox">
+          <p class="decision-eyebrow">ONE LAST QUESTION</p>
+          <h3 class="decision-question">Would you like to get to know the person behind this note?</h3>
+          <p class="decision-subtext">Only if you genuinely want to. Either answer is completely okay.</p>
+          <div class="response-actions decision-actions">
+            <button class="response-btn" id="yesBtn">Yes, I'd like to ♡</button>
+            <button class="response-btn secondary" id="noBtn">No, thank you</button>
+          </div>
+          <p class="response-feedback" id="responseFeedback" aria-live="polite"></p>
+          <div class="decision-result" id="yesResult" hidden>
+            <span class="result-heart">♡</span>
+            <h3>That means a lot.</h3>
+            <p>Here's the person behind this little secret…</p>
+            <p class="identity-reveal">Roll No. 18<br><strong>Pragya Kumar</strong></p>
+            <button class="response-btn identity-next" id="toDateTimeBtn">Continue <span>↗</span></button>
+          </div>
+          <div class="decision-result" id="noResult" hidden>
+            <span class="result-heart">✳</span>
+            <h3>Thank you for being honest.</h3>
+            <p>Your answer is respected. Wishing you only good things.</p>
+          </div>
+          <span class="response-disclaimer">Your choice is saved once in this browser on this device. It is not sent to
+            anyone.</span>
+        </div>
+        <button class="restart-btn" id="restartBtn">READ IT AGAIN ↺</button>
+      </div>
+    </section>
+    <section class="scene date-time-scene" id="dateTimeScene" aria-labelledby="dateTimeTitle">
+      <div class="date-time-card">
+        <p class="eyebrow">A LITTLE NEXT STEP <span>·</span> JUST AN IDEA</p>
+        <h2 id="dateTimeTitle" class="display">Would you like<br>to <em>meet?</em></h2>
+        <p class="muted">If you're comfortable, choose a day and time that works for you. There's absolutely no
+          pressure.</p>
+        <form id="meetForm" class="meet-form">
+          <label for="meetDate">PREFERRED DATE</label>
+          <input id="meetDate" type="date">
+          <label for="meetTime">PREFERRED TIME</label>
+          <input id="meetTime" type="time">
+          <button class="response-btn meet-submit" type="submit">Save my preference ♡</button>
+        </form>
+        <p class="response-feedback" id="meetFeedback" aria-live="polite"></p>
+        <p class="response-disclaimer">This is only a local preview. Your date and time are not sent to anyone.</p>
+        <button class="quiet-link" id="backToReveal" type="button">Back to the note</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>© A LITTLE SECRET</span><span>MADE QUIETLY, WITH CARE <b>♡</b></span></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
